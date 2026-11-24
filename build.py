@@ -8,7 +8,7 @@ CSV = Path.home() / "Documents/postulados-magistrados-TSJ-2026-11-20-completa.cs
 LOGO = Path.home() / "Downloads/LaPatilla-DATA.png"
 LP_LIGHT = Path.home() / "proyectos/barra-patilla-2/img/lp-logo-light.png"
 # Números de lista (columna n) de los postulados impugnados. Se llena solo cuando Rory lo indique.
-IMPUGNADOS = [156, 350, 737, 706, 1, 221, 767, 116, 704, 731, 855, 83, 599, 643, 150, 555]
+IMPUGNADOS = [156, 350, 737, 706, 1, 221, 767, 116, 704, 731, 855, 83, 599, 643, 150, 555, 347]
 
 rows = list(csv.DictReader(open(CSV, encoding="utf-8")))
 data = [[int(r["n"]), r["nombre"].strip(), r["cedula"].strip()] for r in rows]
